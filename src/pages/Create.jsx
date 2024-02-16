@@ -14,7 +14,7 @@ function Create() {
             description,
             details
         }   
-        axios.post('http://localhost:3300/books/', book)
+        axios.post('https://books-api-search.onrender.com/books/', book)
         .then(() => {
             navigate('/')
         })

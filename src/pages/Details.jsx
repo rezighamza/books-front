@@ -5,7 +5,7 @@ function Details() {
     const [book, setBook] = useState({})
     const {id} = useParams()
     useEffect(() => {
-        axios.get(`http://localhost:3300/books/${id}`)
+        axios.get(`https://books-api-search.onrender.com/books/${id}`)
         .then((response) => {
             setBook(response.data)
         })

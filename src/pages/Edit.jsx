@@ -10,7 +10,7 @@ function Edit() {
     const navigate = useNavigate()
     const {id} = useParams()
     useEffect(() => {
-        axios.get(`http://localhost:3300/books/${id}`)
+        axios.get(`https://books-api-search.onrender.com/books/${id}`)
         .then((response) => {
             const book = response.data
             setTitle(book.title)

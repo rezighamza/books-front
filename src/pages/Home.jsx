@@ -16,7 +16,7 @@ function Home() {
     const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        axios.get('http://localhost:3300/books/')
+        axios.get('https://books-api-search.onrender.com/books/')
         .then((response) => {
             setBooks(response.data)
             console.log(response)

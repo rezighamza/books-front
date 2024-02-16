@@ -5,7 +5,7 @@ function Delete() {
   const navigate = useNavigate()
   const {id} = useParams()
   const handelClick = () => {
-    axios.delete(`http://localhost:3300/books/${id}`)
+    axios.delete(`https://books-api-search.onrender.com/books/${id}`)
     .then(() => {
       navigate('/')
     })
